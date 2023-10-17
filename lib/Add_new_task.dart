@@ -67,6 +67,7 @@ class _AddNewTaskModalState extends State<AddNewTaskModal> {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
+
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       Task tasks = Task(

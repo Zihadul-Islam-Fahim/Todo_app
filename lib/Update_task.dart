@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'Style.dart';
-
 class UpdateTaskModal extends StatefulWidget {
   final Function callbackUpdateTask;
   final int i;
@@ -71,7 +69,6 @@ class _UpdateTaskModalState extends State<UpdateTaskModal> {
                   widget.callbackUpdateTask(widget.i, _updateTEcontroller.text);
                   Navigator.pop(context);
                 },
-                style: buttonStyle(),
                 child: const Text('Update'),
               ))
         ],

@@ -16,6 +16,7 @@ class _TodosState extends State<Todos> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         dialogBackgroundColor: Colors.amber[300],
         primarySwatch: Colors.amber,
@@ -29,6 +30,7 @@ class _TodosState extends State<Todos> {
         bottomSheetTheme:
             BottomSheetThemeData(backgroundColor: Colors.deepPurple[400]),
         brightness: Brightness.dark,
+        elevatedButtonTheme: ElevatedButtonThemeData( style: const ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.purple)),),
         canvasColor: Colors.deepPurple[700],
         cardColor: Colors.deepPurple[400],
         primaryColor: Colors.deepPurple,
